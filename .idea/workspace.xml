@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a5a2b67d-c660-4f85-9ab7-8aef50f95b6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/SearchBar/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchBar/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Track/Track.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Track/Track.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/Spotify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Spotify.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Components/SearchBar/SearchBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+            <state relative-caret-position="476">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -44,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/util/Spotify.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="-1071">
+              <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -158,8 +155,8 @@
         <option value="$PROJECT_DIR$/src/Components/App/App.js" />
         <option value="$PROJECT_DIR$/src/Components/SearchResults/SearchResults.js" />
         <option value="$PROJECT_DIR$/src/Components/Track/Track.js" />
-        <option value="$PROJECT_DIR$/src/Components/SearchBar/SearchBar.js" />
         <option value="$PROJECT_DIR$/src/util/Spotify.js" />
+        <option value="$PROJECT_DIR$/src/Components/SearchBar/SearchBar.js" />
       </list>
     </option>
   </component>
@@ -250,12 +247,12 @@
       <workItem from="1566739186788" duration="4672000" />
       <workItem from="1566759684370" duration="281000" />
       <workItem from="1566921559877" duration="8009000" />
-      <workItem from="1567004624764" duration="32443000" />
+      <workItem from="1567004624764" duration="32836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57059000" />
+    <option name="totallyTimeSpent" value="57452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -412,16 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/SearchBar/SearchBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/App/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1105">
@@ -434,8 +421,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util/Spotify.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="-1071">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/SearchBar/SearchBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
