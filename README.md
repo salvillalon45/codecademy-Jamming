@@ -1,4 +1,4 @@
-# Jamming
+# codecademy-Jamming
 [Codecademy Course: Build Web Apps With React] - Project: Jamming
 - A web application that uses the Spotify API to allow users to search for music and create new playlist based on the search results. The newly created playlists will be shown on the Spotify account.
 
