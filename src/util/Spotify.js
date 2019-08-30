@@ -1,9 +1,9 @@
 // The method will get a user’s access token so that they can make requests to the Spotify API.
 
 let accessToken = "";
-const clientID = "335bda4551534b258297e3026fddbbd3";
-const redirectURI = "http://localhost:3000/";
-// const redirectURI = "sv_jamming.surge.sh";
+const clientID = "";
+// const redirectURI = "http://localhost:3000/";
+const redirectURI = "sv_jamming.surge.sh";
 
 const Spotify = {
 
