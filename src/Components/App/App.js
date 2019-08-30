@@ -2,6 +2,7 @@ import React from "react";
 import { SearchBar } from "../SearchBar/SearchBar.js";
 import { SearchResults } from "../SearchResults/SearchResults.js";
 import { Playlist } from "../Playlist/Playlist.js";
+import Spotify from "../../util/Spotify.js";
 
 import "./App.css";
 
@@ -11,46 +12,11 @@ export class App extends React.Component {
         super(props);
 
         this.state = {
-            searchResults : [
-                    {
-                        name : "Hello",
-                        artist : "John Cena",
-                        album : "WWE & POKEMON",
-                        id : "1234"
-                    },
-                    {
-                        name : "Hola",
-                        artist : "Arnold Shwachnoasre",
-                        album : "California",
-                        id : "6969"
-                    },
-                    {
-                        name : "yeah",
-                        artist : "SHPE",
-                        album : "UCI",
-                        id : "420"
-                    }
-            ],
-            playlistName : "Test Playlist",
-            playlistTracks : [
-                {
-                    name : "Hello",
-                    artist : "John Cena",
-                    album : "WWE & POKEMON",
-                    id : "1234"
-                },
-                {
-                    name : "Hola",
-                    artist : "Arnold Shwachnoasre",
-                    album : "California",
-                    id : "6969"
-                },
-                {
-                    name : "yeah",
-                    artist : "SHPE",
-                    album : "UCI",
-                    id : "420"
-                }]
+            // Tracks that appear when the user searches for a song
+            searchResults : [],
+            playlistName : "",
+            // This are on the right side and represent the tracks the user has added to the playlist
+            playlistTracks : []
         }
 
         this.addTrack = this.addTrack.bind(this);
@@ -100,10 +66,26 @@ export class App extends React.Component {
         for (let i = 0; i < tracks.length; i++) {
             trackUris.push(tracks[i].uri);
         }
+        Spotify.savePlaylist(this.state.playlistName, trackUris).then( () => {
+            this.setState({
+                playlistName : "New Playlist",
+                playlistTracks : []
+            })
+        })
     }
 
     search(term) {
         console.log(term);
+
+        Spotify.search(term).then(searchResults => {
+            this.setState({
+                searchResults : searchResults
+            })
+        })
+
+        // this.setState({
+        //     searchResults : Spotify.search(term)
+        // })
     }
 
 

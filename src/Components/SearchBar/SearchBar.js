@@ -23,11 +23,20 @@ export class SearchBar extends React.Component {
     render() {
         return (
             <div className="SearchBar">
+                {console.log("Inside SearchBar Component")}
                 <input
                     placeholder="Enter A Song, Album, or Artist"
                     onChange={this.handleTermChange} />
 
-                <button className="SearchButton">SEARCH</button>
+                <button
+                    className="SearchButton"
+                    onClick={this.search}
+                    onKeyPress={event => {
+                        console.log("Inside key press");
+                        if (event.key === 'Enter') {
+                            this.search()
+                        }
+                    }} >SEARCH</button>
             </div>
         )
     }

@@ -26,14 +26,16 @@ export class Track extends React.Component {
     removeTrack() {
         this.props.onRemove(this.props.track);
     }
+
     render() {
         return (
             <div className="Track">
+                {console.log("Inside Track Component")}
                 <div className="Track-information">
                     <h3> {this.props.track.name} </h3>
                     <p>{this.props.track.artist} | {this.props.track.album}</p>
                 </div>
-                <button className="Track-action">Either Plus or Minus</button>
+                {this.renderAction()}
             </div>
         )
     }
