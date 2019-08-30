@@ -75,19 +75,13 @@ export class App extends React.Component {
     }
 
     search(term) {
-        console.log(term);
 
         Spotify.search(term).then(searchResults => {
             this.setState({
-                searchResults : searchResults
+                searchResults: searchResults
             })
-        })
-
-        // this.setState({
-        //     searchResults : Spotify.search(term)
-        // })
+        });
     }
-
 
     render() {
         return (
@@ -109,6 +103,7 @@ export class App extends React.Component {
                             onRemove={this.removeTrack}
                             onNameChange={this.updatePlaylistName}
                             onSave={this.savePlaylist} />
+
                     </div>
                 </div>
             </div>

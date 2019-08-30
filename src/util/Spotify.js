@@ -20,6 +20,7 @@ const Spotify = {
         const expiresInMatch = url.match(/expires_in=([^&]*)/);
         if (accessTokenMatch && expiresInMatch) {
             // The access token and expiration time are in the URL
+            console.log("The access token and expiration time are in the URL");
             accessToken = accessTokenMatch[1];
             const expiresIn = Number(expiresInMatch[1]);
 
@@ -33,6 +34,7 @@ const Spotify = {
         // This mean that we are going to have to authenticate the user so that they can get an access token
         // You will need the user’s access token to make requests to the Spotify API.
         else {
+            console.log("Access Token is empty and not in url");
             window.location = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURI}`;
         }
     },
@@ -48,7 +50,6 @@ const Spotify = {
         }).then(response => {
             return response.json()
             }).then(jsonResponse => {
-                console.log(jsonResponse);
                 if (!jsonResponse.tracks) {
                     return [];
                 }
@@ -71,8 +72,6 @@ const Spotify = {
         const accessToken = Spotify.getAccessToken();
         const headers = {
             Authorization : `Bearer ${accessToken}`
-            // mode : "cors",
-            // 'Access-Control-Allow-Origin': '*'
         };
         let userID = "";
 
@@ -114,6 +113,25 @@ const Spotify = {
                 })
 
             })
+        })
+    },
+
+    getCurrentPlaylist() {
+        const accessToken = Spotify.getAccessToken();
+        console.log("What is access token:: " + accessToken);
+        const headers = {
+            Authorization : `Bearer ${accessToken}`
+        };
+
+        let url = "https://api.spotify.com/v1/me/playlists";
+        return fetch(url, {
+            headers : headers
+        }).then(response => {
+            return response.json();
+        }).then(jsonResponse => {
+            console.log("what is the current playlists:: " + jsonResponse.href);
+            console.log("what is the current playlists:: " + jsonResponse.items.name);
+            return jsonResponse;
         })
     }
 };

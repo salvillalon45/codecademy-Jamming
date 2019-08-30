@@ -9,7 +9,7 @@ export class Tracklist extends React.Component {
         return (
             <div className="TrackList">
                 { console.log("Inside Tracklist component") }
-                { console.log(this.props.tracks) }
+                {/*{ console.log(this.props.tracks) }*/}
                 {
                     this.props.tracks.map(track => {
                         return <Track
