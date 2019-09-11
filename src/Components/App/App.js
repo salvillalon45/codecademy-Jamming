@@ -86,7 +86,28 @@ export class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>Ja<span className="highlight">mmm</span>ing</h1>
+                <section>
+                  <header>
+                    <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                      <h1 >Salvador Villalon Codecademy Capstone Project: Jammming</h1>
+                      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                      </button>
+
+                      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav ml-auto">
+                          <li className="nav-item">
+                            <a className="nav-link" href="https://github.com/salvillalon45/codecademy-Jamming/blob/master/README.md#codecademy-jamming">About</a>
+                          </li>
+                          <li className="nav-item">
+                            <a className="nav-link" href="https://github.com/salvillalon45/codecademy-Jamming/blob/master/README.md#instructions">Instructions</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </header>
+                </section>
+
                 <div className="App">
                     <SearchBar
                         onSearch={this.search} />
@@ -103,9 +124,22 @@ export class App extends React.Component {
                             onRemove={this.removeTrack}
                             onNameChange={this.updatePlaylistName}
                             onSave={this.savePlaylist} />
-
                     </div>
                 </div>
+
+                <footer className="footer">
+                  <p> Made by Salvador Villalon </p>
+                  <ul>
+                    <a href="https://medium.com/@salvav1"><li>Medium</li></a>
+                    <li> | </li>
+                    <a href="https://github.com/salvillalon45"><li>GitHub</li></a>
+                    <li> | </li>
+                    <a href="https://www.linkedin.com/in/salvadorvillalon/"><li>LinkedIn</li></a>
+                    <li> | </li>
+                    <a href="https://salvillalon45.github.io"><li>Portfolio</li></a>
+                  </ul>
+                </footer>
+
             </div>
         )
     }

@@ -8,7 +8,34 @@ html {
     font-size: 18px;
 }
 
-h1 {
+.navbar h1 {
+  font-size: 1rem;
+  color: white;
+  font-family: 'PT Mono', monospace;
+  padding-top: 7px;
+}
+
+footer {
+  display: flex;
+  height: 60px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  padding-left: 25px;
+  padding-top: 15px;
+  font-family: 'PT Mono', monospace;
+}
+
+.footer ul {
+  padding-left: 25px;
+  list-style-type: none;
+}
+
+.footer li {
+  display: inline;
+}
+
+/* h1 {
     padding: .77rem 0;
     background-color: #010c3f;
     text-align: center;
@@ -19,6 +46,20 @@ h1 {
 
 h1 .highlight {
     color: #6c41ec;
+} */
+
+/* ------------------------------------
+   Navigation
+*/
+
+/* Do this if you want to change the color of the navbar */
+.navbar.bg-dark {
+  background-color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-family: 'PT Mono', monospace;
 }
 
 h2 {
